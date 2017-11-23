@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">三国演义电子词典</string>
+    <string name="github_src">github.com/KinomotoSakura</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">搜索</string>
+    <string name="title_notifications">收藏</string>
+    <string name="title_like">已收藏</string>
+    <string name="title_hint">请输入关键字</string>
+    <string name="title_about">关于</string>
+    <string name="title_share">分享</string>
+    <string name="title_send">发送</string>
+    <string name="title_name">姓名：</string>
+    <string name="title_moreinfo">主要事迹</string>
+    <string name="title_force">主效势力：</string>
+    <string name="title_sex">性别：</string>
+    <string name="title_date">生卒年(公元)：</string>
+    <string name="title_origin">籍贯：</string>
+    <string name="action_delete">删除</string>
+    <string name="action_delete_">取消收藏</string>
+    <string name="action_avator">上传头像</string>
+    <string name="action_bg">上传背景</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+
+    <string name="author">作者:</string>
+    <string name="email">Email:</string>
+    <string name="version">版本:</string>
+    <string name="github">Github:</string>
+    <string name="author_">永远喜欢木之本樱(๑•̀ㅂ•́)و✧</string>
+    <string name="email_">1796068983@qq.com</string>
+    <string name="version_">v0.8</string>
+    <string name="statement">声明：本App为中山大学数据科学与计算机学院15级MAD课程期中项目，由小组合作完成。组长：李翔。</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>
