@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.lixiang.threekingdoms.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:id="@+id/main_favo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/MainImg_favo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/avatar_caiyan"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/MainImg_favo">
+
+            <TextView
+                android:id="@+id/MainName_favo"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:text="Name"/>
+
+            <TextView
+                android:id="@+id/MainForce"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_margin="18dp"
+                android:textSize="18sp"
+                android:textColor="#6e6e6e"
+                android:text="@string/title_like"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/delete_favo"
+            android:text="@string/action_delete_"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_delete"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</com.example.lixiang.threekingdoms.SwipeItemLayout>

@@ -1,0 +1,60 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">三国演义电子词典</string>
+    <string name="github_src">github.com/KinomotoSakura</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">搜索</string>
+    <string name="title_edit">修改</string>
+    <string name="title_notifications">收藏</string>
+    <string name="title_like">已收藏</string>
+    <string name="title_hint">请输入关键字</string>
+    <string name="title_about">关于</string>
+    <string name="title_share">分享</string>
+    <string name="title_send">发送</string>
+    <string name="title_moreinfo">主要事迹：</string>
+    <string name="title_force">主效势力：</string>
+    <string name="title_sex">性别：</string>
+    <string name="title_date">生卒年(公元)：</string>
+    <string name="title_origin">籍贯：</string>
+    <string name="action_delete">删除</string>
+    <string name="action_delete_">取消收藏</string>
+    <string name="action_avator">上传头像</string>
+    <string name="action_bg">上传背景</string>
+
+    <string name="title_name">姓名：</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+
+
+    <string name="author">作者:</string>
+    <string name="email">Email:</string>
+    <string name="version">版本:</string>
+    <string name="github">Github:</string>
+    <string name="author_">永远喜欢木之本樱(๑•̀ㅂ•́)و✧</string>
+    <string name="email_">1796068983@qq.com</string>
+    <string name="version_">v0.9</string>
+    <string name="statement">声明：本App为中山大学数据科学与计算机学院15级MAD课程期中项目，由小组合作完成。组长：李翔。</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="info_caiyan">蔡琰，字文姬，汉末女诗人，蔡邕之女。初嫁河东卫仲道。后为北方虏走，归南匈奴左贤王，居匈奴十二年。期间生二子，作《胡笳十八拍》。曹操念蔡邕无后，以千金赎回，再嫁董祀。</string>
+    <string name="info_caocao">曹操，字孟德，是西园八校尉之一，曾只身行刺董卓，失败后和袁绍共同联合天下诸侯讨伐董卓，后独自发展自身势力，统一了北方。但是在南下讨伐江东的战役中，曹操在赤壁惨败。曹操一生未称帝，他病死后，曹丕继位后不久称帝，追封曹操为魏武皇帝。</string>
+    <string name="info_daqiao">江东乔国老有二女，大乔和小乔。大乔有沉鱼落雁之资，倾国倾城之容。孙策征讨江东，攻取皖城，娶大乔为妻。自古美女配英雄，伯符大乔堪绝配。曹操赤壁鏖兵，虎视江东，曾有揽二乔娱暮年，还足平生之愿。</string>
+    <string name="info_dianwei">擅使大双戟，为人壮猛任侠，人莫敢近。初属张邈，后与人不和，杀人外逃，因逐虎过涧而被射猎中的夏侯惇所见，异其悍武，引至军中荐与太祖。其时帐前牙门旗既长且大，风吹欲倒，军人莫能持定，而韦竟以一手稳之，众皆以奇力为异，太祖称其「古之恶来」。</string>
+    <string name="info_diaochan">舍身报国的可敬女子，她为了挽救天下黎民，为了推翻权臣董卓的荒淫统治，受王允所托，上演了可歌可泣的「连环美人计」，周旋于两个男人之间，成功的离间了董卓和吕布，最终吕布将董卓杀死，结束了董卓专权的黑暗时期。</string>
+    <string name="info_guanyu">关羽，字云长，亡命奔涿，后闻涿县招军破贼，特来应募。与刘备、张飞桃园结义，羽居其次。使八十二斤青龙偃月刀随刘备东征西讨。虎牢关温酒斩华雄，屯土山降汉不降曹。为报恩斩颜良诛文丑，解曹操白马之围，后过五关斩六将，千里寻兄。刘备平定益州后，封关羽为五虎大将之首。</string>
+    <string name="info_liubei">刘备，字玄德，蜀汉的开国皇帝，中山靖王刘胜的后代。刘备少年以贩鞋织草席为生。黄巾起义时与关羽、张飞桃园结义，一同剿除黄巾。后三人虎牢关战败吕布。赤壁之战前夕，刘备在荆州三顾茅庐，请诸葛亮出山辅助，在赤壁之战中，联合孙权打败曹操，奠定了三分天下的基础。</string>
+    <string name="info_lvbu">吕布，字奉先，是骁勇善战的汉末诸侯，先后跟随丁原、董卓作战，并最终杀死了丁原和董卓。成为独立势力后，吕布与曹操为敌，和刘备、袁术等诸侯时敌时友，最终不敌曹操和刘备的联军，兵败人亡。著名的美女貂蝉上演连环计后，成为吕布的妻室。</string>
+    <string name="info_simayi">司马懿，字仲达，早年任文学掾，是曹操帐下谋士之一，后出谋五路伐蜀，开始崭露头角。因蜀汉马谡的反间计一度被废，但面对诸葛亮的北伐强攻，魏国不得不再次启用司马懿，先擒孟达，后败马谡于街亭。司马懿多次败于诸葛亮，于是采用闭门不战的策略防守，直至诸葛亮病逝。</string>
+    <string name="info_sunce">孙策，字伯符，父坚与荆州牧刘表攻，与之相从。后坚为表将乱箭射死，策闻父尸在彼，乃用俘虏黄祖换之，往淮南投袁术。后策图自强，以父所留传国玉玺换术兵，术表策为折冲校尉殄寇将军。策自此荡平东南，威震三江。破刘繇，挟死一将、喝死一将，人皆呼之为「小霸王」。</string>
+    <string name="info_sunquan">孙权，字仲谋，十九岁继承了其兄孙策之位，力据江东，击败了黄祖。后东吴联合刘备，在赤壁大战击溃了曹操军。东吴后来又和曹操军在合肥附近鏖战，并从刘备手中夺回荆州、杀死关羽、大破刘备的讨伐军。曹丕称帝后孙权先向北方称臣，后自己建吴称帝，迁都建业。</string>
+    <string name="info_sunshangxiang">孙权之妹，名字不详，演义中为孙尚香。刘备向东吴借荆州不还，鲁肃身负关系；周瑜一为救友二为国计，于是上书孙权，教使「美人计」，进妹予刘备为夫人，诱其丧志而疏远属下。不料在诸葛亮的锦囊妙计安排下，假婚成真姻；后来夫人更助刘备返蜀，于路上怒斥追袭的吴将。</string>
+    <string name="info_wenzhaohuanghou">魏文帝皇后，谥号“文昭甄皇后”。甄氏初期嫁与袁绍次子袁熙，袁熙带兵出外征战，留下甄氏独身照顾婆婆，袁氏败亡后，曹操之子曹丕见其美艳动人，便纳为己有。黄初年间，魏文帝曹丕新纳的宠妾郭后栽赃甄后，诬陷她埋木偶诅咒文帝。文帝曹丕大怒，将甄后赐死。</string>
+    <string name="info_zhangfei">张飞，字益德，与刘备和关羽桃园结义，张飞居第三，随刘备征讨黄巾。十八路诸侯讨董时，三英战吕布，其勇为世人所知。曹操降荊州后引骑追击，刘备败逃，张飞引二十余骑，立马于长阪桥，吓退曹军数十里。庞统死后刘备召其入蜀，后封为蜀汉五虎大将。</string>
+    <string name="info_zhouyu">周瑜，字公瑾，南郡太守。自幼与孙策交好，策离袁术讨江东，瑜引兵从之。为中郎将，孙策相待甚厚，又同娶二乔。赤壁战前，瑜自鄱阳归，于群英会戏蒋干、怒打黄盖行诈降计、火烧曹军，大败之。后与诸葛亮较智斗，定假涂灭虢等计，皆为亮破。后气死于巴陵，年三十六岁。</string>
+    <string name="info_zhugeliang">诸葛亮，字孔明，人称卧龙先生，有经天纬地之才，鬼神不测之机。刘皇叔三顾茅庐，遂允出山相助。曾舌战群儒、借东风、智算华容、三气周瑜，辅佐刘备于赤壁之战大败曹操，更取得荆州为基本。后奉命率军入川，于定军山智激老黄忠，斩杀夏侯渊，败走曹操，夺取汉中。</string>
+    <string name="info_moren">默认信息</string>
+    <string name="info_addition"><xliff:g id="xxx">%s</xliff:g></string>
+
+
+</resources>

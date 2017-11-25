@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.lixiang.threekingdoms.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView android:id="@+id/MainImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/avatar_caiyan"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/MainImg">
+
+                <TextView android:id="@+id/MainName"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="Name"/>
+
+                <TextView android:id="@+id/MainInfo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:textColor="#6e6e6e"
+                    android:text="Info"/>
+
+            </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/edit"
+            android:text="@string/title_edit"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_edit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/mark"
+            android:text="@string/title_notifications"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_mark"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/delete"
+            android:text="@string/action_delete"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:background="@drawable/btn_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</com.example.lixiang.threekingdoms.SwipeItemLayout>

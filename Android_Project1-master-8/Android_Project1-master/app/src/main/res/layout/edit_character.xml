@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_edit_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="368dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/edit_icon_bg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/edit_icon_border"
+            android:backgroundTint="@color/grayB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择一个图片"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_icon_bg"
+            app:layout_constraintTop_toTopOf="@+id/edit_icon_bg"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_icon_bg"
+            app:layout_constraintRight_toRightOf="@+id/edit_icon_bg"/>
+
+        <!--覆盖前面的背景-->
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/edit_icon_border"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_icon_bg"
+            app:layout_constraintTop_toTopOf="@+id/edit_icon_bg"
+            app:layout_constraintRight_toRightOf="@id/edit_icon_bg"
+            app:layout_constraintBottom_toBottomOf="@id/edit_icon_bg"/>
+
+        <TextView
+            android:id="@+id/edit_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/title_name"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toTopOf="@+id/edit_icon"
+            app:layout_constraintLeft_toRightOf="@+id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:maxLength="6"
+            android:textSize="16sp"
+            android:hint="请输入姓名"
+            app:layout_constraintTop_toTopOf="@+id/edit_name_title"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_name_title"
+            app:layout_constraintLeft_toRightOf="@+id/edit_name_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/edit_sex_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/title_sex"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toBottomOf="@+id/edit_name_title"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@+id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <RadioGroup
+            android:id="@+id/edit_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/edit_sex_title"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_sex_title"
+            app:layout_constraintLeft_toRightOf="@+id/edit_sex_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+            <RadioButton
+                android:id="@+id/edit_sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_male"
+                android:textSize="16dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/edit_sex_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_female"
+                android:textSize="16dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/edit_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/title_date"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toBottomOf="@id/edit_sex_title"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:maxLength="8"
+            android:textSize="16sp"
+            android:hint="请输入生卒年"
+            app:layout_constraintTop_toBottomOf="@id/edit_date_title"
+            app:layout_constraintLeft_toLeftOf="@id/edit_date_title"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+
+
+
+        <TextView
+            android:id="@+id/edit_origin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/title_origin"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toBottomOf="@id/edit_date"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/edit_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:maxLength="6"
+            android:textSize="16sp"
+            android:hint="请输入籍贯"
+            app:layout_constraintTop_toTopOf="@id/edit_origin_title"
+            app:layout_constraintBottom_toBottomOf="@id/edit_origin_title"
+            app:layout_constraintLeft_toRightOf="@id/edit_origin_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/edit_force_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/title_force"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toBottomOf="@+id/edit_origin_title"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="@id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/edit_force"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:maxLength="5"
+            android:textSize="16sp"
+            android:hint="请输入势力"
+            app:layout_constraintTop_toTopOf="@id/edit_force_title"
+            app:layout_constraintBottom_toBottomOf="@id/edit_force_title"
+            app:layout_constraintLeft_toRightOf="@id/edit_force_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/edit_moreinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/title_moreinfo"
+            android:textColor="@color/pureBlack"
+            app:layout_constraintTop_toBottomOf="@+id/edit_icon"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/edit_moreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:lines="10"
+            android:maxLines="10"
+            android:maxLength="150"
+            android:textSize="16sp"
+            android:background="@null"
+            android:hint="请输入人物生平"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@+id/edit_moreinfo_title"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_guideline"
+            app:layout_constraintGuide_percent="0.5"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="25dp"
+            tools:layout_editor_absoluteX="192dp" />
+        <Button
+            android:id="@+id/edit_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textColor="@color/pureWhite"
+            android:background="@drawable/edit_icon_border"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/edit_moreinfo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/edit_guideline"/>
+
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/pureWhite"
+            android:background="@drawable/edit_icon_border"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@+id/edit_moreinfo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/edit_guideline" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/navigation_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+        <!--app:headerLayout="@layout/nav_header_main"-->
+        <!--app:menu="@menu/nav_main_edit">-->
+
+    <!--</android.support.design.widget.NavigationView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        android:background="@color/pureBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</android.support.v4.widget.DrawerLayout>

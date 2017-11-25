@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/main_fl_card_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:padding="16dp"
+        android:src="@drawable/rectangle_back"/>
+
+    <LinearLayout
+        android:id="@+id/card_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <TextView
+            android:id="@+id/introduction_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/cardText"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/character_sex_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_sex"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/character_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/character_sex_tips"
+                android:text="Sex"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/character_birth_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/title_date"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/character_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/character_birth_tips"
+                android:text="Date"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/character_origin_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/title_origin"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/character_origin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/character_origin_tips"
+                android:text="Origin"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/character_force_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_force"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/character_force"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/character_force_tips"
+                android:text="Force"
+                android:textColor="@color/cardText"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/title_moreinfo"
+            android:textColor="@color/cardText"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/introduction_others"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:text="@string/info_guanyu"
+            android:textColor="@color/cardText"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>
