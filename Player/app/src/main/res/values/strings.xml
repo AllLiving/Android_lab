@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Player</string>
+    <string name="playstate">playing</string>
+    <string name="pausestate">pause</string>
+    <string name="timebegin">00:00</string>
+    <string name="sumtime">SumTime</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cedar.player.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<com.example.cedar.player.CircleImageView-->
+        <!--android:id="@+id/plate_img"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/spic"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp" />-->
+
+    <ImageView
+        android:id="@+id/plate_img"
+        android:layout_centerInParent="true"
+        android:src="@drawable/spic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/process"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/previous"
+        android:text="@string/timebegin"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/sumtime"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/previous"
+        android:text="@string/sumtime"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/previous"
+        android:layout_alignStart="@+id/play_pause"
+        android:layout_alignEnd="@+id/stop"/>
+    <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+
+    <ImageView
+        android:id="@+id/previous"
+        android:background="@drawable/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/play_pause"
+        android:background="@drawable/play"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/previous"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:src="@drawable/stop"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/next"
+        android:layout_marginEnd="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:background="@drawable/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
