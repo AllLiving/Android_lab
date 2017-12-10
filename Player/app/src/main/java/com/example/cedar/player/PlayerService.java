@@ -27,8 +27,8 @@ public class PlayerService extends Service{
     public PlayerService(){
         Log.i(tag, "PlayerService...");
         try {
-            mp.setDataSource(Environment.getExternalStorageDirectory()+"/netease/cloudmusic/Music/Audio Machine - Danuvius.mp3");
-//            mp.setDataSource(Environment.getExternalStorageDirectory()+"/data/melt.mp3");
+//            mp.setDataSource(Environment.getExternalStorageDirectory()+"/netease/cloudmusic/Music/Audio Machine - Danuvius.mp3");
+            mp.setDataSource(Environment.getExternalStorageDirectory()+"/data/melt.mp3");
             mp.prepare();
             mp.setLooping(true);
         } catch (Exception e){

@@ -196,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
                     data.writeInt(1000*duration);
                     runtime.setText(duration/60 +":"+ duration%60);
                     binder.transact(104, data, Parcel.obtain(), 0);
+                    updateUI();
                 } catch (Exception e){
                     e.printStackTrace();
                 }
@@ -290,6 +291,10 @@ public class MainActivity extends AppCompatActivity {
             //权限被用户拒绝，可以提示用户，关闭界面等等
             System.exit(0);
         }
+    }
+    @Override
+    public void onBackPressed(){
+        moveTaskToBack(false);
     }
 }
 

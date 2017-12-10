@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SharePrefer</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm">Comfirm password</string>
+    <string name="register">Login</string>
+    <string name="reset">Reset</string>
+    <string name="filetitle">FileTitle</string>
+    <string name="editmain">Log Your Everyday</string>
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
+    <string name="login_password">Your Password</string>
+</resources>
