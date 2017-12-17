@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Database</string>
+    <string name="fill">Add one</string>
+    <string name="name">Name</string>
+    <string name="birth">BirthDay</string>
+    <string name="present">Present</string>
+    <string name="phone">Phone</string>
+    <string name="noexist">NULL</string>
+</resources>

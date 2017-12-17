@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                             for (int i=position; i<9; i++){
                                 index_list[i] = index_list[i+1];
                             }
-                            simpleAdapter.notifyDataSetChanged();
+//                            simpleAdapter.notifyDataSetChanged();
                         }
                     }).setNegativeButton("No", new DialogInterface.OnClickListener() {
                         @Override

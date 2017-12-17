@@ -1,0 +1,75 @@
+
+
+V	无法clean，也无法加载RecyclerView的添加项
+1. 之前的代码可以正常运作，说明SDK中信息完备
+故而查找两个文件之间的不同，得知在文件
+	build.gradle(Project Database)中的代码多了一个Url
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url"http://maven.google.com"
+        }
+    }
+}
+
+V	打开文件闪退
+运行结果显示是在布局文件运行结束后闪退，
+布局文件中出现闪退问题多为组件选择不当
+
+
+V	OnItemClickListener不能被识别
+系统提示添加头部：AdapterView，但是此时不能使用Item的OnClick
+添加public interface OnItemClickListener重载onClick
+
+V	布局文件中使用的添加信息无法使用
+不能使用后续添加的颜色以及字符串
+剪切掉后添加的资源并clean文件，报错后添加回去。
+
+
+V	进入insert函数内部getWritableDatabase闪退
+闪退是由于内存出错，因此向前查询，找到exec的运行SQL代码，发现错误并修正。
+
+V	insert函数中插入信息的顺序不符合期望
+参数储存是按照整体顺序储存的，序列号有所不同
+
+V	RecyclerView中没显示传入的参数,没有调用convert函数
+没有与Adapter进行绑定
+
+V	运行完onCreate就闪退，
+	RecyclerView设置adapter导致闪退
+既然不是野指针或者空指针的问题，那就是组件的信息出了差错。调用的组件信息将present误写成了parent
+
+V	RecyclerView中每一个item的高度过高
+界面的问题有一大部分是因为布局设置失误，比如在LinearLayout上设置的高度为match_parent
+
+V	删除信息条目的时候总是出错
+删除顺序问题，先删除了索引列表导致索引错位。
+
+
+更新时对话框中的值，不能与数据保持同步。
+V	不会修改从布局文件inflate的view，中各组件的数据。
+直接截取关键的代码“inflate(R.layout”搜索，搜索结果必然有相关用法。
+
+V	点击过一次之后，点击事件监听失效；
+点击事件在adapter的监听器中，同时需要更新adapter，导致失效
+
+V	notifyDatasChanged不能更新界面
+adapter已经改变，但是activity不能随之改变；
+多线程试用效果不好；
+notifyItemChanged无效；
+直接使用组件调用接口更新：已经更新了adapter，但是没有更新RecyclerView；
+搜索问题：“Android RecyclerView自定义适配器更新但是界面没有更新”，得到的第一篇blog从内存的角度分析；
+由此得出结论，是由于再度创建了adapter，导致原有的adapter没有变化。
+具体操作：
+1.保证原有的listItem与adapter的地址，避免创建新的组件混淆视听。
+2.清空与修改适配器内容，视图会随之改变。
+总结：控件的初始化一定要尽可能放在初始化函数中，不可复用。
+
+获取电话号码的时候，无法根据名字条件获取
+查看师兄的blog，知晓实现的架构；
+
+
+
+
+
